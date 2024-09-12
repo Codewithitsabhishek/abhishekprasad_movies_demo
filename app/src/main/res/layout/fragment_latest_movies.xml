@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".fragments.LatestMoviesFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:queryHint="Search for movies" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="360dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                tools:listitem="@layout/item_business" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="400dp"
+                tools:listitem="@layout/item_business"
+                android:orientation="vertical" />
+        </RelativeLayout>
+
+    </ScrollView>
+</layout>

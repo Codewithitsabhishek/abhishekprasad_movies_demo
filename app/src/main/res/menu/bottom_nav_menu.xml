@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tv_explore"
+        android:title="Movies"
+        android:icon="@drawable/explorer"/>
+    <item
+        android:id="@+id/tv_chat"
+        android:title="Recommended"
+        android:icon="@drawable/chat"/>
+    <item
+        android:id="@+id/tv_groups"
+        android:title="More"
+        android:icon="@drawable/more"/>
+</menu>
